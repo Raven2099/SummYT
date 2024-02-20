@@ -15,3 +15,9 @@ Flask framework is used (GET, POST methods) to communicate between the front end
 Download the file and run the command 'Flask run'
 Ensure flask is available in the system.
 The models required can be downloaded from hugging-face.
+
+
+#####
+Accuracy of the generated summarization depends on the youtuber's style of content.
+A more informative and linear approach generates understandable summarization, whereas a video with multiple topics all over the place do not generate a well made summarization.
+Works better for news and informative channels.
