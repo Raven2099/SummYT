@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SummYT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<script>
+    function showLoading() {
+        var loadingMessage = document.getElementById("loadingMessage");
+        loadingMessage.style.display = "block";
+    }
+</script>
+
+<body>
+    <div class="sumyt-container">
+        <h1>Summ</h1>
+        <h1 id="whitetext">YT</h1>
+    </div>
+    <h2>YouTube videos simplified</h2>
+    
+    <!-- On Screen -->
+    <form id="sumytForm" method = 'POST' action='#'>
+        <label for="link">Link</label>
+        <input type="text" id="link" name = 'link' required>
+        <br>
+        <br>
+        <button type="submit" class="submitButton" onclick="showLoading()">Get Summarization</button>
+    </form>
+
+    <p id="loadingMessage" style="display:none;">Summarization is loading...</p>
+    </div>
+    
+</body>
+</html>
